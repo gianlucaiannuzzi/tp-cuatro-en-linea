@@ -1,10 +1,10 @@
 package juego;
 
 /**
- * Juego Cuatro en LÌ≠nea
+ * Juego Cuatro en L√≠¬≠nea
  * 
  * Reglas: - Juego para 2 jugadores obligatoriamente.
- * 		   - Cada jugador utilizara fichas de un color(rojo o amarillo) que le quedara para toda la partida.
+ *  	   - Cada jugador utilizara fichas de un color(rojo o amarillo) que le quedara para toda la partida.
  *         - Una vez que un jugador tire, le tocara al otro y asi sucesivamente.
  *         - Ganara el que alinee cuatro fichas del mismo color horizontal, vertical, o diagonalmente.
  *         - Si el tablero se llena quedara en empate.
@@ -24,7 +24,7 @@ public class CuatroEnLinea {
 	 * post: empieza el juego entre el jugador que tiene fichas rojas, identificado como 
 	 * 		 'jugadorRojo' y el jugador que tiene fichas amarillas, identificado como
 	 * 		 'jugadorAmarillo'. 
-	 * 		 Todo el tablero est· vacÌo.
+	 * 		 Todo el tablero est√° vac√≠o.
 	 * 
 	 * @param filas : cantidad de filas que tiene el tablero.
 	 * @param columnas : cantidad de columnas que tiene el tablero.
@@ -84,23 +84,23 @@ public class CuatroEnLinea {
 	}
 	
 	/**
-	 * post: devuelve la cantidad m·xima de fichas que se pueden apilar en el tablero.
+	 * post: devuelve la cantidad m√°xima de fichas que se pueden apilar en el tablero.
 	 */
 	public int contarFilas() {
 		return tablero.length;
 	}
 
 	/**
-	 * post: devuelve la cantidad m·xima de fichas que se pueden alinear en el tablero.
+	 * post: devuelve la cantidad m√°xima de fichas que se pueden alinear en el tablero.
 	 */
 	public int contarColumnas() {
 		return tablero[0].length;
 	}
 
 	/**
-	 * pre : fila est· en el intervalo [1, contarFilas()],
-	 * 		 columnas est· en el intervalo [1, contarColumnas()].
-	 * post: indica quÈ ocupa el casillero en la posiciÛn dada por fila y columna.
+	 * pre : fila est√° en el intervalo [1, contarFilas()],
+	 * 		 columnas est√° en el intervalo [1, contarColumnas()].
+	 * post: indica qu√© ocupa el casillero en la posici√≥n dada por fila y columna.
 	 * 
 	 * @param fila
 	 * @param columna
@@ -118,8 +118,8 @@ public class CuatroEnLinea {
 	}
 	
 	/**
-	 * pre : el juego no terminÛ, columna est· en el intervalo [1, contarColumnas()]
-	 * 		 y a˙n queda un Casillero.VACIO en la columna indicada. 
+	 * pre : el juego no termin√≥, columna est√° en el intervalo [1, contarColumnas()]
+	 * 		 y a√∫n queda un Casillero.VACIO en la columna indicada. 
 	 * post: deja caer una ficha en la columna indicada, almacena el color del ultimo turno para comprobar si este gano
 	 * 	     y cambia el color del siguiente jugador.
 	 * 
@@ -142,8 +142,8 @@ public class CuatroEnLinea {
 	}
 	
 	/**
-	 * post: indica si el juego terminÛ porque uno de los jugadores
-	 * 		 ganÛ o no existen casilleros vacÌos.
+	 * post: indica si el juego termin√≥ porque uno de los jugadores
+	 * 		 gan√≥ o no existen casilleros vac√≠os.
 	 */
 	public boolean termino() {
 		boolean finDeLaPartida = false;
@@ -170,7 +170,7 @@ public class CuatroEnLinea {
 	}
 	
 	/**
-	 * post: indica si el juego terminÛ y tiene un ganador, comprobando las cuatro formas posibles de victoria.
+	 * post: indica si el juego termin√≥ y tiene un ganador, comprobando las cuatro formas posibles de victoria.
 	 */
 	public boolean hayGanador() {
 		boolean hayGanador = false;
@@ -181,8 +181,8 @@ public class CuatroEnLinea {
 	}
 	
 	/**
-	 * pre : el juego terminÛ.
-	 * post: devuelve el nombre del jugador que ganÛ el juego.
+	 * pre : el juego termin√≥.
+	 * post: devuelve el nombre del jugador que gan√≥ el juego.
 	 */
 	public String obtenerGanador() {
 		if(termino()) {
